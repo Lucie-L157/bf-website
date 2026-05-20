@@ -22,7 +22,7 @@ $( document ).ready(function() {
         envelope.addClass("close")
            .removeClass("open");
     }
-console.log("HELLO");
+
     window.addEventListener('DOMContentLoaded', () => {
 
     const root = document.querySelector('.heartsfloat');
