@@ -7,10 +7,23 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="locked">
+    <div id="gate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="panel">
+      <h2 id="gate-title">Enter the code to open the website</h2>
+      <p class="small">This page is locked... 💌</p>
+      <div class="row">
+        <input id="gateInput" placeholder="Enter code" autocomplete="one-time-code" aria-label="Enter code" />
+        <button id="gateBtn" class="btn">Unlock</button>
+      </div>
+      <div class="hint">Tip: The day we met (DD/MM/YYY)</div>
+    </div>
+  </div>
+    <div class="heartsfloat">   
+    </div>
     <p class="message">Dear Digby, 
         <br>
-        <br> As you know, I love procrastinating my revision by doing the most random things, and so one day I just randomly decided to code this website for you. I hope you like it! I can't believe we've been together for 6 whole months now! In some ways it feels like I've known you for ever, but also like time has flown by so quickly.
+        <br> As you know, I love procrastinating my revision by doing the most random things, and so one day I just randomly decided to code this website for you. I can't believe we've been together for 6 whole months now! In some ways it feels like I've known you for ever, but also like time has flown by so quickly.
         <br> 
         <br>Tons of love from,
         <br> Lucie xxx
@@ -35,16 +48,127 @@
 
     <div class="reset">
         <button style = "margin-right: 50px;
-    margin-left: 100px;" id="open">Open</button>
+    margin-left: 80px;" id="open">Open</button>
         <button style = "margin-right: 450px;
     margin-left: 35px;" id="reset">Reset</button>
     </div>
 
+    <br>
+
+    
+    <div id="textbox" style = "margin-right: 30px; margin-left: 1190px; margin-bottom: 500px;">
+        Songs that make me think of you:
+    </div>
+
+    <div id="spotifytext" style = "margin-right: 20px; margin-left: 1190px; margin-top: 50px;">
+        <iframe src=https://open.spotify.com/embed/playlist/3BFIYHKCw7IPS51No3xJw7? 
+        width="300" 
+        height="200" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; 
+        clipboard-write; 
+        encrypted-media; 
+        fullscreen; 
+        picture-in-picture">
+        </iframe>
+    </div>
+
+    <br>
+
+    <div id="textbox" style = "margin-right: 30px; margin-left: 1190px; margin-bottom: 500px; margin-top: 300px;">
+        My favourite pictures of us:
+    </div>
+
+    <div class="gallery" style="margin-top:10px; margin-left: 10px;">
+        <img src="https://drive.google.com/thumbnail?id=1WojW6QDkf88J83vxg9DUP-wSpPQ2uy-I&sz=w1000" alt="Memory 1" >
+        <img src="https://drive.google.com/thumbnail?id=1Xn5pVSWNySY0N9FR4BEyvun9mvA0Vlfm&sz=w1000" alt="Memory 2" >
+        <img src="https://drive.google.com/thumbnail?id=12UhBfxz40OyDqN9FDjcu-9s_lg7iqxzo&sz=w1000" alt="Memory 3" >
+        <img src="https://drive.google.com/thumbnail?id=1osIaAijQKXSVXV6veFQKSYpudSDRWmzC&sz=w1000" alt="Memory 4" >
+        <img src="https://drive.google.com/thumbnail?id=1PxMINCUAeTvf52pttrTLX5WTEMZwkWXU&sz=w1000" alt="Memory 5" >
+    </div> 
+    <div class="lightbox app" id="lightbox" aria-hidden="true"><img alt="enlarged"></div>
+
     <div id="sidebar">
     </div>
 
-    <div class="heartsfloat">   
+    <br>
+
+    <h3>Countdown to our anniversary:</h3>
+    <div class="count" id="anniversarycountdown" aria-live="polite">
+        <div class="box"><b id="ad">0</b><span class="small">Days</span></div>
+        <div class="box"><b id="ah">0</b><span class="small">Hours</span></div>
+        <div class="box"><b id="am">0</b><span class="small">Minutes</span></div>
+        <div class="box"><b id="as">0</b><span class="small">Seconds</span></div>
+    </div>  
+
+    <br>
+
+    <h3>Countdown to your birthday:</h3>
+    <div class="count" id="birthdaycountdown" aria-live="polite">
+        <div class="box"><b id="bd">0</b><span class="small">Days</span></div>
+        <div class="box"><b id="bh">0</b><span class="small">Hours</span></div>
+        <div class="box"><b id="bm">0</b><span class="small">Minutes</span></div>
+        <div class="box"><b id="bs">0</b><span class="small">Seconds</span></div>
+    </div>  
+
+    <br>
+
+    <h3>Countdown to my birthday:</h3>
+    <div class="count" id="mbirthdaycountdown" aria-live="polite">
+        <div class="box"><b id="mbd">0</b><span class="small">Days</span></div>
+        <div class="box"><b id="mbh">0</b><span class="small">Hours</span></div>
+        <div class="box"><b id="mbm">0</b><span class="small">Minutes</span></div>
+        <div class="box"><b id="mbs">0</b><span class="small">Seconds</span></div>
+    </div> 
+
+    <br>
+
+    <h3>Where we met:</h3>
+    <div class="map" style="margin-top:10px; margin-left: 10px;">
+        <img src="https://drive.google.com/thumbnail?id=1WkMSI8fJ-lPB0ElypPW58i_htvHp5aZt&sz=w1000" alt="Map" >
+    </div> 
+
+    <br>
+
+    <button id="babyButton">CLICK ME</button>
+    <div id="babyPopup" class="popup">
+        <div class="popup-content">
+            <span id="closeBabyPopup">&times;</span>
+            <h2>baby you and me</h2>
+            <div class="baby-photos">
+                <img src="https://drive.google.com/thumbnail?id=1lhj_BY0V_SYVP64T8y6xiN23apn6Rs-Y&sz=w1000" alt="Baby Digby">
+                <img src="https://drive.google.com/thumbnail?id=1XObLz73hOgC1eqADMbwg1w1x80voUlxA&sz=w1000" alt="Baby Lucie">
+            </div>
+        </div>
     </div>
+
+    <br>
+
+
+    <img id="openCardsBtn" src="https://drive.google.com/thumbnail?id=1Qy4srCtun2LFOCOn2cKO-Ph5jfb-VtTN&sz=w1000" alt="Open Cards">
+    <div id="cardPopup" class="popup1">
+        <div class="popup1-window">
+            <div class="popup1-header">
+                <span>US IF WE WERE IN A VIDEO GAME</span>
+                <span id="closePopup" class="close">✕</span>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://drive.google.com/thumbnail?id=1ToBhsZl19Vh_3nVXf-c7b6YvtDRdqHAX&sz=w1000">
+                    <h3>LUCE</h3>
+                </div>
+                <div class="card">
+                    <img src="https://drive.google.com/thumbnail?id=1AV1QPDCpjcKPClScHlPvPPo4seJA0yWA&sz=w1000">
+                    <h3>DIGGS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer class="small"> from lucie xxx </footer>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="script.js"></script>
