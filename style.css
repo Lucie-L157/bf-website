@@ -277,8 +277,8 @@ body {
 #sidebar{
     position: fixed;
     top: 0;
-    left: 1150px;
-    width: 400px;
+    right: 0;
+    width: 385px;
     height: 100%;
     background-color: #ff3333;
 }
