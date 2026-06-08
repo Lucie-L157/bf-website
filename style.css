@@ -675,3 +675,133 @@ body {
 }
 
 
+/*iphone*/
+
+@media (max-width: 900px) {
+
+  body{
+    overflow-x:hidden;
+  }
+
+  #sidebar{
+    display:none !important;
+  }
+
+  .message{
+    margin:20px;
+    font-size:18px;
+    width:auto;
+  }
+
+  #envelope{
+    margin:30px auto;
+    right:auto;
+  }
+
+  .envlope-wrapper{
+    height:auto;
+    display:flex;
+    justify-content:center;
+  }
+
+  .reset{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+
+  .reset button{
+    margin:5px !important;
+    min-width:140px;
+  }
+
+  #textbox,
+  #spotifytext{
+    position:static;
+    width:calc(100% - 40px);
+    margin:20px auto;
+    min-width:auto;
+  }
+
+  #spotifytext iframe{
+    width:100%;
+    max-width:100%;
+  }
+
+  .gallery{
+    position:static;
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-items:center;
+    margin:20px auto;
+  }
+
+  .gallery img{
+    width:140px;
+    height:140px;
+  }
+
+  .count{
+    margin:20px;
+    max-width:none;
+    flex-wrap:wrap;
+  }
+
+  .box{
+    min-width:70px;
+  }
+
+  .map img{
+    width:100%;
+    height:auto;
+    max-width:100%;
+  }
+
+  .baby-photos{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .baby-photos img{
+    width:220px;
+    height:220px;
+  }
+
+  .popup1-window{
+    width:95%;
+    max-width:400px;
+  }
+
+  .cards{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card img{
+    width:160px;
+    height:220px;
+  }
+
+  #babyButton{
+    bottom:20px;
+    left:20px;
+  }
+
+  #openCardsBtn{
+    width:65px;
+    bottom:20px;
+    right:20px;
+  }
+
+  .gate .row{
+    flex-direction:column;
+  }
+
+  .gate input,
+  .gate .btn{
+    width:100%;
+  }
+
+}
