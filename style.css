@@ -718,15 +718,35 @@ body {
 
   #textbox,
   #spotifytext{
-    position:static;
-    width:calc(100% - 40px);
-    margin:20px auto;
-    min-width:auto;
+    position:static !important;
+    width:calc(100% - 40px) !important;
+    margin:20px auto !important;
+    min-width:auto !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
   }
 
   #spotifytext iframe{
-    width:100%;
-    max-width:100%;
+    width:100% !important;
+    max-width:100% !important;
+  }
+
+  .gallery{
+    position:static !important;
+    width:100% !important;
+    margin:20px auto !important;
+    max-width:100% !important;
+    top:auto !important;
+    right:auto !important;
+  }
+
+  .map{
+    position:static !important;
+    margin:20px auto !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
   }
 
   .gallery{
